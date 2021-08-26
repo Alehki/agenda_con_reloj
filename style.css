@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #333;
+}
+
+
+.form{
+    background-color: lightcoral;
+    /* width: 800px; */
+    /* height: 120px; */
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 25px 50px;
+
+    position: relative;
+    border: solid 1px black;
+}
+
+.container{
+    display: inline-block;
+    width: 80%;
+}
+
+.task{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: .5em;
+    border-radius: 5px;
+}
+
+.color{
+    margin-right: 150px;
+    width: 150px;
+    
+    margin-bottom: 10px;
+}
+
+.fas{
+    position: absolute;
+    cursor: pointer;
+    font-size: 3rem;
+
+    top: 30%;
+    right: 10%;
+}
+
+.fas:hover{
+    color: rgb(25, 68, 160);
+    box-shadow: 5px 5px 5px;
+}
+
+/* List */
+
+.list{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 50px;
+}
+
+.item{
+    background-color: khaki;
+    list-style: none;
+    width: 800px;
+    height: 70px;
+    /* margin-left: 130px; */
+    margin-left: 12%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+
+    margin-bottom: 10px;
+    user-select: none;
+
+    border: solid 1px black;
+}
+
+
+.msj{
+    /* background-color: lawngreen; */
+    display: inline-block;
+    width: 65%;
+    vertical-align: middle;
+    margin-right: 20px;
+
+}
+
+.reloj{
+    /* background-color: lightcoral; */
+    width: 20%;
+    margin-right: 10px;
+}
+
+.reloj__seconds{
+    color: red;
+}
+
+.far{
+    display: inline-block;
+    width: 10%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.far:hover{
+    color: red;
+}
+
+/* Extras */
+
+
+.task__color{
+    /* border: solid 5px red; */
+    outline: solid 5px red;
+}
