@@ -62,16 +62,29 @@ const getDate = () =>{
 
 
 deleted.addEventListener(`click`, ()=>{
-    if(task.value!=`` && date.value){
+    const signo = new Date(date.value) - new Date()
+
+    if(task.value!=`` && signo>0){
         setDate(task.value, color.value, date.value)
     }else if(task.value==``){
-        task.classList.add(`task__color`)
-        task.setAttribute(`placeholder`, `FALTA DATO`)
+        text.textContent = `La tarea es oblogatoria`
         setTimeout(() => {
-            task.classList.remove(`task__color`)
-            task.setAttribute(`placeholder`, `Add-Task`)
-        }, 500);
-    }
+            text.textContent = ``
+        }, 1000);
+    }else if(date.value==``){
+        const text = document.getElementById(`text`)
+        text.textContent = `La fecha es oblogatoria`
+        setTimeout(() => {
+            text.textContent = ``
+        }, 1000);
+    }else if(signo<=0){
+        const text = document.getElementById(`text`)
+        text.textContent = `La fecha establecida carece de sentido`
+        setTimeout(() => {
+            text.textContent = ``
+        }, 1000);
+    } 
+
 })
 
 
@@ -84,7 +97,6 @@ const horas = () =>{
         const relojList = document.querySelectorAll(`.reloj`)
         
         for(const f of relojList){
-            // console.log(f.id)
             if(f.id==key){
                 cb(objeto.date, f)
             }
@@ -110,6 +122,3 @@ list.addEventListener(`click`, (e)=>{
             localStorage.removeItem(f.parentElement.children[1].id)
         }}
 })
-
-
-console.dir(color)

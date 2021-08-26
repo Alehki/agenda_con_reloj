@@ -10,8 +10,6 @@ body{
 
 .form{
     background-color: lightcoral;
-    /* width: 800px; */
-    /* height: 120px; */
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
@@ -20,6 +18,7 @@ body{
 
     position: relative;
     border: solid 1px black;
+    box-shadow: 5px 5px 5px rgb(255 0 0 / 40%);
 }
 
 .container{
@@ -65,14 +64,15 @@ body{
 }
 
 .item{
+    position: relative;
     background-color: khaki;
     list-style: none;
-    width: 800px;
+    width: 80vw;
     height: 70px;
-    /* margin-left: 130px; */
-    margin-left: 12%;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     padding-left: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 
     margin-bottom: 10px;
     user-select: none;
@@ -82,18 +82,16 @@ body{
 
 
 .msj{
-    /* background-color: lawngreen; */
     display: inline-block;
     width: 65%;
-    vertical-align: middle;
-    margin-right: 20px;
-
+    margin-right: 1vw;
+    font-size: 1.5vw;
 }
 
 .reloj{
-    /* background-color: lightcoral; */
     width: 20%;
-    margin-right: 10px;
+    margin-right: .5vw;
+    font-size: 1.5vw;
 }
 
 .reloj__seconds{
@@ -101,20 +99,27 @@ body{
 }
 
 .far{
+    position: absolute;
     display: inline-block;
     width: 10%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
+    right: 1%;
+    top: 25%;
 }
 
 .far:hover{
     color: red;
 }
 
-/* Extras */
+/* ------------------------------------------------------------------------------------------------------------- */
 
-
-.task__color{
-    /* border: solid 5px red; */
-    outline: solid 5px red;
+.text{
+    color: red;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2vw;
+    height: 4vh;
 }
