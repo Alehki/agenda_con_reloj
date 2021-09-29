@@ -125,7 +125,7 @@ body{
     font-family: sans-serif;
     background-color: rgba(244, 165, 96, 0.521);
     position: absolute;
-    top: 0;
+    top: 5vh;
     z-index: 10;
     color: red;
     width: 100%;
