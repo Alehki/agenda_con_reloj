@@ -70,19 +70,19 @@ deleted.addEventListener(`click`, ()=>{
         text.textContent = `La tarea es oblogatoria`
         setTimeout(() => {
             text.textContent = ``
-        }, 1000);
+        }, 1200);
     }else if(date.value==``){
         const text = document.getElementById(`text`)
         text.textContent = `La fecha es oblogatoria`
         setTimeout(() => {
             text.textContent = ``
-        }, 1000);
+        }, 1200);
     }else if(signo<=0){
         const text = document.getElementById(`text`)
         text.textContent = `La fecha establecida carece de sentido`
         setTimeout(() => {
             text.textContent = ``
-        }, 1000);
+        }, 1200);
     } 
 
 })
