@@ -13,8 +13,8 @@ body{
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    padding: 25px 50px;
+    margin-top: 5vh;
+    padding: 1.5em;
 
     position: relative;
     border: solid 1px black;
@@ -58,19 +58,22 @@ body{
 /* List */
 
 .list{
+    padding-left: 0;
     margin-left: auto;
     margin-right: auto;
-    padding: 25px 50px;
+    /* padding: 25px 50px; */
+    font-size: 1em;
 }
 
 .item{
-    position: relative;
+    /* position: relative; */
     background-color: khaki;
     list-style: none;
     width: 80vw;
-    height: 70px;
-    padding-top: 1.5rem;
-    padding-left: 1rem;
+    /* height: 70px; */
+    /* padding-top: 1.5rem; */
+    /* padding-left: 1rem; */
+    padding: .5em 1em;
     margin-left: auto;
     margin-right: auto;
 
@@ -84,13 +87,13 @@ body{
 .msj{
     display: inline-block;
     width: 65%;
-    margin-right: 1vw;
+    /* margin-right: 1vw; */
     font-size: 1.5vw;
 }
 
 .reloj{
     width: 20%;
-    margin-right: .5vw;
+    margin-right: 3vw;
     font-size: 1.5vw;
 }
 
@@ -99,27 +102,68 @@ body{
 }
 
 .far{
-    position: absolute;
+    /* position: absolute; */
     display: inline-block;
-    width: 10%;
+    /* width: 10%; */
     font-size: 2rem;
     cursor: pointer;
-    right: 1%;
-    top: 25%;
+    /* right: 1%;
+    top: 25%; */
 }
 
 .far:hover{
     color: red;
 }
 
+.msj, .reloj, .far{
+    vertical-align: middle;
+}
+
 /* ------------------------------------------------------------------------------------------------------------- */
 
 .text{
+    font-family: sans-serif;
+    background-color: rgba(244, 165, 96, 0.521);
+    position: absolute;
+    top: 0;
+    z-index: 10;
     color: red;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    margin: .2em 0;
     text-align: center;
-    font-size: 2vw;
-    height: 4vh;
+    font-size: 10vh;
+    /* height: .2em; */
 }
+
+/* ---------------------------------------------------- */
+
+@media (max-width: 768px){
+
+    .msj, .reloj, .far{
+        margin: 0;
+    }
+
+    .item{
+        width: 95vw;
+        padding: .3em;
+    }
+
+    .msj, .reloj{
+        margin-right: 5px;
+    }
+
+    .msj{
+        /* background-color: rebeccapurple; */
+        font-size: .6em;
+    }
+    .reloj{
+        /* background-color: rosybrown; */
+        font-size: .5em;
+    }
+
+    .far{
+        /* background-color: sandybrown; */
+        font-size: 1.3rem;
+    }
+}
+
